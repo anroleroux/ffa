@@ -1,6 +1,19 @@
 const testing = true; //testing
 const debug = false; //testing
 
+const USER_STORAGE_KEY = "currentUserId";
+
+function getCurrentUserId() {
+  return localStorage.getItem(USER_STORAGE_KEY) || "";
+}
+
+function setCurrentUserId(userId) {
+  if (!userId) {
+    return;
+  }
+  localStorage.setItem(USER_STORAGE_KEY, userId);
+}
+
 function showPage(name) {
     document.querySelectorAll('main > section').forEach(s => s.hidden = true);
     document.getElementById('page-' + name).hidden = false;
@@ -15,6 +28,7 @@ function showPage(name) {
 /* {{categories-js}} */
 
 document.addEventListener("DOMContentLoaded", () => {
+  setCurrentUserId(1);
   loadCategories();
   loadProducts();
 });
