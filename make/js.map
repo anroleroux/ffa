@@ -1,2 +1,3 @@
 {{reactivity-js}}:ui/reactivity.js
 {{products-js}}:ui/comps/products.js
+{{categories-js}}:ui/comps/categories.js

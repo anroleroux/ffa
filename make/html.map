@@ -1,3 +1,4 @@
 {{layout-css}}:ui/dist/index.css
 {{products-html}}:ui/content/products.html
+{{categories-html}}:ui/content/categories.html
 {{layout-js}}:ui/dist/index.js

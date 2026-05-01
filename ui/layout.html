@@ -10,11 +10,21 @@
   </head>
   <body>
     <header>
+      <nav class="main-nav">
+        <button class="nav-btn nav-btn--active" id="nav-products" onclick="showPage('products')">Products</button>
+        <button class="nav-btn" id="nav-categories" onclick="showPage('categories')">Categories</button>
+      </nav>
     </header>
     <main>
-      <section>
+      <section id="page-categories" hidden>
+        <h1>Categories</h1>
+        <div id="categories-list" class="items-list">
+          <p>Loading categories...</p>
+        </div>
+      </section>
+      <section id="page-products">
         <h1>Products</h1>
-        <div id="products-list">
+        <div id="products-list" class="items-list">
           <p>Loading products...</p>
         </div>
       </section>
